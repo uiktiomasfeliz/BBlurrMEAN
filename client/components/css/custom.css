@@ -1,0 +1,216 @@
+/* PARA PROFILE */
+
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:20px;
+}
+
+
+/* PARA NAVBAR */
+
+.primary-header {
+    /*width: 100%;
+    height: 64px;
+    top: -124px;
+    position: relative;
+    left: 0;*/
+    background-color: #343434;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /*z-index: -1;
+    -webkit-transition: top .5s ease,z-index .5s linear;
+    -moz-transition: top .5s ease,z-index .5s linear;
+    -ms-transition: top .5s ease,z-index .5s linear;
+    -o-transition: top .5s ease,z-index .5s linear;
+    transition: top .5s ease,z-index .5s linear;*/
+}
+
+.primary-header .filters-container {
+    -webkit-transition: max-height .3s ease-in;
+    -moz-transition: max-height .3s ease-in;
+    -ms-transition: max-height .3s ease-in;
+    -o-transition: max-height .3s ease-in;
+    transition: max-height .3s ease-in;
+    z-index: 90;
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 600px;
+    max-height: 40px;
+    overflow: hidden;
+    -webkit-box-shadow: -5px -2px 20px rgba(50,50,50,.2);
+    -moz-box-shadow: -5px -2px 20px rgba(50,50,50,.2);
+    box-shadow: -5px -2px 20px rgba(50,50,50,.2);
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateZ(0);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+/* END PARA NAVBAR */
+
+
+/*UTIL*/
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/*ASIDE*/
+.user-icon {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.aside {
+  background-color: #78909c;
+  color: #fff;
+  height: 720px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+/*NAVBAR*/
+.custom-navbar{
+  height: 52px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.symbol {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  margin-left: 5%;
+}
+
+.color-female {
+  color: pink;
+}
+
+.color-male {
+  color: blue;
+}
+.content-parent-div {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-col-user-icon {
+  margin-top: 40px;
+}
+
+.content-user-icon {
+  max-width: 70px;
+  max-height: 70px;
+  margin-top: -2.75rem;
+}
+
+.content-user-imgs {
+  max-height: 150px;
+  margin-left: 15px;
+}
+
+.slick-imgs {
+  width: 90%;
+  margin-left: 40px;
+}
+
+.scroll-area {
+  height: 668px;
+  overflow: auto;
+}
+
+
+/* MODAL FOTOS */
+
+.feed-photo {
+  max-height: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.dialog-custom-container {
+  overflow-y: scroll;
+  height: 93%;
+}
+.inLine {
+  display: inline-block;
+}
+
+/* test button style */
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+.btn-transparent {
+  background-color: rgba(250, 250, 250, 0.5);
+  border-color: rgba(0, 0, 0, 0.01);
+  color: #FFFFFF;
+}
+.btn-position {
+  left: -22%;
+  position: relative;
+  top: 70px;
+}
+
+.btn-selected {
+    background-color: #1ab394;
+    /*border-color: #1ab394;*/
+    color: #FFFFFF;
+}
+.ngdialog.ngdialog-theme-plain.custom-width .ngdialog-content {
+    width: 90%;
+    height: 100%;
+}
+/* END MODAL FOTOS */

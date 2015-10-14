@@ -1,0 +1,122 @@
+<div class="lft aside">
+  <div class="modal-header">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="resources/images/user_icon.png" class="img-circle user-icon">
+      </div>
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-6">
+        <h4 class="modal-title"><a href="#/profile">Name User</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="resources/images/paisaje_1.jpg" class="img-responsive img-rounded">
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-primary pull-right">Nueva foto</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <span class="nav-label">Ofertas</span>
+        <span class="label label-warning pull-right">4</span>
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="resources/images/paisaje_2.jpg" class="img-responsive img-rounded">
+      </div>
+      <div class="col-md-6 mt-md">
+        <button type="button" class="btn btn-info pull-right">Ver oferta</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <span class="nav-label">Ventas</span>
+        <span class="label label-info pull-right">1</span>
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="resources/images/paisaje_3.jpg" class="img-responsive img-rounded">
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-success center-block">Visto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="aside">
+  <div class="modal-header">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="resources/images/user_icon.png" class="img-circle user-icon">
+      </div>
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-6">
+        <h4 class="modal-title"><a href="#/profile">Name User</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="resources/images/paisaje_1.jpg" class="img-responsive img-rounded">
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-primary pull-right">Nueva foto</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <span class="nav-label">Ofertas</span>
+        <span class="label label-warning pull-right">4</span>
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="resources/images/paisaje_2.jpg" class="img-responsive img-rounded">
+      </div>
+      <div class="col-md-6 mt-md">
+        <button type="button" class="btn btn-info pull-right">Ver oferta</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <span class="nav-label">Ventas</span>
+        <span class="label label-info pull-right">1</span>
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="resources/images/paisaje_3.jpg" class="img-responsive img-rounded">
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-success center-block">Visto</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->

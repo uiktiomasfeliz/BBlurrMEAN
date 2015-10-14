@@ -1,0 +1,57 @@
+  <div class="text-center" keyboard-keys>
+    <div class="main" snapscroll fit-window-height snap-index="snapIndex" after-snap="afterSnap(snapIndex)" snap-animation="snapAnimation" ng-swipe-up="swipeUp()" ng-swipe-down="swipeDown()">
+      <div>
+        <h1>Blurred site</h1>
+        <h3>Aqui vamos a vender tus fotos a precios resonables</h3>
+        <div class="text-center">
+          <a class="btn btn-primary btn-lg" ng-click="IntentLogin()"><i class="fa fa-facebook"></i> Login in</a>
+        </div>
+        <div>
+            <div class="alert alert-info" data-ng-show="salutation">Hello, {{user.name}}</div>
+          </div>
+      </div>
+      <div>
+        <h1>Tias</h1>
+        <h3>Fotacos de chonis.</h3>
+      </div>
+      <div>
+        <h1>Tios</h1>
+        <h3>Fotacos de canis</h3>
+      </div>
+
+      </div>
+
+      <!--
+      <div></div>
+      <div></div>
+      -->
+
+    <ul class="indicators">
+      <li><a ng-click="snapIndex=0"><span ng-class="{active: snapIndex == 0}"></span></a></li>
+      <li><a ng-click="snapIndex=1"><span ng-class="{active: snapIndex == 1}"></span></a></li>
+      <li><a ng-click="snapIndex=2"><span ng-class="{active: snapIndex == 2}"></span></a></li>
+      <!--<li><a ng-click="snapIndex=3"><span ng-class="{active: snapIndex == 3}"></span></a></li>
+      <li><a ng-click="snapIndex=4"><span ng-class="{active: snapIndex == 4}"></span></a></li>-->
+    </ul>
+
+
+    <script type="text/ng-template" id="firstDialogId">
+        <div class="ngdialog-message dialog-custom-container">
+          <div class="container-fluid">
+            <div class="inLine" ng-repeat="i in [1, 2, 3, 4, 5, 6]">
+              <img alt="image" class="feed-photo" ng-src="https://pbs.twimg.com/profile_images/378800000186966941/290c1dd3cd00334358942139dbda378c_400x400.jpeg">
+              <button ng-class="i>4 ? '':'btn-selected'" class="btn-transparent btn-circle btn-position" type="button"><i class="fa fa-check"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="ngdialog-buttons">
+            <button type="button" class="ngdialog-button ngdialog-button-primary">Importar fotos</button>
+        </div>
+    </script>
+    <!--
+      <link rel="stylesheet" href="../css/ngDialog.css">
+      <link rel="stylesheet" href="../css/ngDialog-theme-default.css">
+      <link rel="stylesheet" href="../css/ngDialog-theme-plain.css">
+      <link rel="stylesheet" href="../css/ngDialog-custom-width.css">
+    -->
+</div>

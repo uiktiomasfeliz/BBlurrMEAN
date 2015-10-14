@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!--[if lte IE 8]><script src="resources/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="resources/css/main.css" />
+    <link rel="stylesheet" href="resources/css/custom.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="resources/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="resources/css/ie9.css" /><![endif]-->
+  <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--ANGULAR-ASIDE
+  <link rel="stylesheet" href="bower_components/angular-aside/dist/css/angular-aside.css">-->
+  <!--SLICK-->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <!--END SLICK
+  <link type="text/css" rel="stylesheet" href="resources/css/app.css"/>-->
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body ng-app="bblurrApp">
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ui-view></div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="bower_components/es5-shim/es5-shim.js"></script>
+  <script src="bower_components/json3/lib/json3.min.js"></script>
+  <![endif]-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <!-- Scripts -->
+
+  <script src="resources/js/jquery.min.js"></script>
+<!--
+  <script src="resources/js/jquery.scrolly.min.js"></script>
+  <script src="resources/js/jquery.scrollzer.min.js"></script>
+-->
+  <script src="resources/js/skel.min.js"></script>
+  <script src="resources/js/util.js"></script>
+  <script src="resources/js/main.js"></script>
+
+  <!--[if lte IE 8]><script src="resources/js/ie/respond.min.js"></script><![endif]-->
+
+
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-aside/dist/js/angular-aside.js"></script>
+  <script src="./bower_components/angular-swipe/dist/angular-swipe.min.js"></script>
+  <script src="bower_components/angular-snapscroll/dist/angular-snapscroll.min.js"></script>
+  <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+  <script src="app.js"></script>
+  <!--
+  <script src="state.js"></script>
+  -->
+  <script src="home/home.js"></script>
+  <script src="home/homeService.js"></script>
+  <script src="index/index.js"></script>
+  <script src="profile/profile.js"></script>
+  <script src="menu/menu.js"></script>
+  <!--SLICK-->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.js"></script>
+  <script src="bower_components/angular-slick/dist/slick.js"></script>
+  <script src="bower_components/angular-slick-carousel/dist/angular-slick.min.js"></script>
+  <!--END SLICK-->
+  <!-- Angular-Facebook -->
+  <script src="bower_components/angular-facebook/lib/angular-facebook.js"></script>
+  <!-- END Angular-Facebook -->
+  <!-- Infinite-Scroll -->
+  <script type='text/javascript' src='bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js'></script>
+  <!-- END Infinite-Scroll -->
+
+</body>
+</html>

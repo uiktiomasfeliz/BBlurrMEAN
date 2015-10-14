@@ -1,0 +1,55 @@
+<!-- Header -->
+			<div id="header" ng-controller = "MenuCtrl" ng-cloak>
+				<div class="top">
+					<!-- Logo -->
+						<div id="logo" >
+							<div ng-show="isLoggedIn()">
+								<span class="image avatar48"><img ng-src="{{getCurrentUser().facebook.picture.data.url}}" alt="" /></span>
+								<h1 id="title"><a ui-sref="main.profile">{{ getCurrentUser().name }}</a> &nbsp;<a ng-click="logout()"><i class="fa fa-sign-out"></i></a></h1>
+								<p>{{getCurrentUser().facebook.gender}}</p>
+							</div>
+							<a ng-hide = "isLoggedIn()" class="button scrolly" ng-click="loginOauth('facebook')"><i class="fa fa-facebook"></i> Login in</a>
+						</div>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+								Prologue's nav expects links in one of two formats:
+								1. Hash link (scrolls to a different section within the page)
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+								2. Standard link (sends the user to another page/site)
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+							-->
+							<ul ng-show="isLoggedIn()">
+								<li><a ui-sref="main.home" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a  id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a ui-sref="main.profile" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a  id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+
+						</nav>
+				</div>
+				<div class="bottom">
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+				</div>
+			</div>
+
+			<script type="text/ng-template" id="firstDialogId">
+					<div class="ngdialog-message dialog-custom-container">
+						<div class="container-fluid">
+							<div class="inLine" ng-repeat="i in [1, 2, 3, 4, 5, 6]">
+								<img alt="image" class="feed-photo" ng-src="https://pbs.twimg.com/profile_images/378800000186966941/290c1dd3cd00334358942139dbda378c_400x400.jpeg">
+								<button ng-class="i>4 ? '':'btn-selected'" class="btn-transparent btn-circle btn-position" type="button"><i class="fa fa-check"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="ngdialog-buttons">
+							<button type="button" class="ngdialog-button ngdialog-button-primary">Importar fotos</button>
+					</div>
+			</script>

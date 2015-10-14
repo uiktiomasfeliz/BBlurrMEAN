@@ -1,0 +1,11 @@
+<div class="ngdialog-message dialog-custom-container">
+  <div class="container-fluid">
+    <div class="inLine" ng-repeat="i in [1, 2, 3, 4, 5, 6]">
+      <img alt="image" class="feed-photo" ng-src="https://pbs.twimg.com/profile_images/378800000186966941/290c1dd3cd00334358942139dbda378c_400x400.jpeg">
+      <button ng-class="i>4 ? '':'btn-selected'" class="btn-transparent btn-circle btn-position" type="button"><i class="fa fa-check"></i></button>
+    </div>
+  </div>
+</div>
+<div class="ngdialog-buttons">
+    <button type="button" class="ngdialog-button ngdialog-button-primary">Importar fotos</button>
+</div>

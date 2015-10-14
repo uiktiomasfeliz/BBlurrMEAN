@@ -1,0 +1,104 @@
+<!--
+<div  ng-include src="'aside/aside.html'"></div>
+<div class="cont home-div">
+  <div  ng-include src="'navbar/navbar.html'"></div>
+-->
+
+  <section id="top" class="one dark cover">
+  <div class="container">
+      <div class="row">
+      <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+           <A href="edit.html" >Edit Profile</A>
+
+        <!--
+        <A href="logout()" >Logout</A>
+        -->
+       <br>
+       <p class=" text-info">May 05,2014,03:00 pm </p>
+      </div>
+
+        <div class="col-lg-9 col-lg-offset-1 toppad">
+        <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >-->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{ getCurrentUser().name }}</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center">
+                  <!--<img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> -->
+                  <img alt="User Pic" src="{{getCurrentUser().facebook.picture.data.url}}" class="img-circle img-responsive">
+                </div>
+
+                <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+                  <dl>
+                    <dt>DEPARTMENT:</dt>
+                    <dd>Administrator</dd>
+                    <dt>HIRE DATE</dt>
+                    <dd>11/12/2013</dd>
+                    <dt>DATE OF BIRTH</dt>
+                       <dd>11/12/2013</dd>
+                    <dt>GENDER</dt>
+                    <dd>Male</dd>
+                  </dl>
+                </div>-->
+                <div class=" col-md-9 col-lg-9 ">
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Nombre:</td>
+                        <td ng-hide="isEdit">{{getCurrentUser().facebook.first_name}}</td>
+                        <td ng-show="isEdit"><input type="text" class="form-control" id="Nombre" value="{{getCurrentUser().facebook.first_name}}">
+                      </tr>
+                      <tr>
+                        <td>Apellidos:</td>
+                        <td ng-hide="isEdit">{{getCurrentUser().facebook.last_name}}</td>
+                        <td ng-show="isEdit"><input type="text" class="form-control" id="Apellidos" value="{{getCurrentUser().facebook.last_name}}">
+                      </tr>
+                      <tr>
+                        <td>Fecha Nacimiento</td>
+                        <td ng-hide="isEdit">01/24/1988</td>
+                        <td ng-show="isEdit"><input type="text" class="form-control" id="FechaNac" value="01/24/1988">
+                      </tr>
+                      <tr>
+                        <tr>
+                          <td>Sexo</td>
+                          <td ng-hide="isEdit">{{getCurrentUser().facebook.gender}}</td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Sexo" value="Hombre">
+                        </tr>
+                        <tr>
+                          <td>Dirección</td>
+                          <td ng-hide="isEdit">Calle Larios, Malaga</td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Dirección" value="Calle Larios, Malaga">
+                        </tr>
+                        <tr>
+                          <td>Email</td>
+                          <td ng-hide="isEdit"><a href="mailto:damian_8_8@hotmail.com">{{getCurrentUser().facebook.email}}</a></td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Dirección" value="damian_8_8@hotmail.com">
+                        </tr>
+                          <td>Telefono</td>
+                          <td ng-hide="isEdit">123-4567-890</td>
+                          <td ng-show="isEdit"><input type="text" class="form-control" id="Telefono" value="123-4567-890">
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <a href="#" class="btn btn-primary">La pasta que he ganado</a>
+                  <a href="#" class="btn btn-primary">Las fotos que me han comprado</a>
+                </div>
+              </div>
+            </div>
+                 <div class="panel-footer">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <a ng-click="troggleEdit()" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                        </span>
+                    </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--</div>-->
